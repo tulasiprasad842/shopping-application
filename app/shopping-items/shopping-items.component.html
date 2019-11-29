@@ -1,0 +1,20 @@
+<div class="row">
+
+    <div class="col-xs-16 col-sm-4 col-md-4 col-lg-4" *ngFor="let item of items">
+        <mat-card class="shopping-item-card">
+            <img height="165px" mat-card-image src="{{item.imgPath}}" alt="Bball img">
+            <mat-card-content>
+                <p>
+                    Title:<a>{{item.title}}</a>
+                    <br>
+                    Prize:<b>{{item.price}}</b>
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a routerLink="/item-detail/{{item.id}}"><button mat-button>View Details</button></a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+
+https://github.com/piyalidas10/Shopping-Cart-angular/tree/master/src

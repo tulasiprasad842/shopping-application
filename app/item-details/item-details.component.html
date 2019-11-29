@@ -1,0 +1,17 @@
+<mat-card class="item-details">
+    <mat-card-header>
+        <mat-card-title>{{item.title}} Details</mat-card-title>
+    </mat-card-header>
+    <img class="img-in-card" mat-card-image src="{{item.imgPath}}" alt="img">
+    <mat-card-content>
+        Title: <b>{{item.title}}</b>
+        <br>
+        Price: <b>{{item.price}}</b>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="addToCart()">Add To Cart</button>
+        <button mat-raised-button color="go-back" (click)="goBack()">go Back</button>
+    </mat-card-actions>
+</mat-card>
+
+<a routerLink="/cart"><button mat-raised-button class="primary">Show Cart Items</button></a>
